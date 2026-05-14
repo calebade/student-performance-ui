@@ -51,7 +51,7 @@ function StudentPage() {
       };
 
       const response = await axios.post(
-        "https://student-performance-api-kbp0.onrender.com",
+        "https://student-performance-api-kbp0.onrender.com/predict",
         payload
       );
 
