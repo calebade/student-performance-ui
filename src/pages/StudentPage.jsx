@@ -50,6 +50,38 @@ function StudentPage() {
         "Attendance_%": Number(formData.Attendance_Percent)
       };
 
+      // VALIDATION
+
+      if (payload.CA1 > 20) {
+        alert("CA1 cannot exceed 20");
+        setLoading(false);
+        return;
+      }
+
+      if (payload.CA2 > 20) {
+        alert("CA2 cannot exceed 20");
+        setLoading(false);
+        return;
+      }
+
+      if (payload.Assignment > 20) {
+        alert("Assignment cannot exceed 20");
+        setLoading(false);
+        return;
+      }
+
+      if (payload.Mid_Semester_Exam > 30) {
+        alert("Midterm score cannot exceed 30");
+        setLoading(false);
+        return;
+      }
+
+      if (payload["Attendance_%"] > 100) {
+        alert("Attendance cannot exceed 100%");
+        setLoading(false);
+        return;
+      }
+
       const response = await axios.post(
         "https://student-performance-api-kbp0.onrender.com/predict",
         payload
