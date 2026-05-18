@@ -88,7 +88,7 @@ function StudentPage() {
             <input
               type="number"
               name="CA1"
-              placeholder="CA1"
+              placeholder="CA1 /20"
               onChange={handleChange}
               required
             />
@@ -96,7 +96,7 @@ function StudentPage() {
             <input
               type="number"
               name="CA2"
-              placeholder="CA2"
+              placeholder="CA2 /20"
               onChange={handleChange}
               required
             />
@@ -104,7 +104,7 @@ function StudentPage() {
             <input
               type="number"
               name="Assignment"
-              placeholder="Assignment"
+              placeholder="Assignment /25"
               onChange={handleChange}
               required
             />
@@ -112,7 +112,7 @@ function StudentPage() {
             <input
               type="number"
               name="Mid_Semester_Exam"
-              placeholder="Midterm"
+              placeholder="Midterm score /35"
               onChange={handleChange}
               required
             />
@@ -120,7 +120,7 @@ function StudentPage() {
             <input
               type="number"
               name="Attendance_Percent"
-              placeholder="Attendance %"
+              placeholder="Attendance/100%"
               onChange={handleChange}
               required
             />
