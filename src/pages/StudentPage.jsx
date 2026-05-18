@@ -64,8 +64,8 @@ function StudentPage() {
         return;
       }
 
-      if (payload.Assignment > 20) {
-        alert("Assignment cannot exceed 20");
+      if (payload.Assignment > 25) {
+        alert("Assignment cannot exceed 25");
         setLoading(false);
         return;
       }
