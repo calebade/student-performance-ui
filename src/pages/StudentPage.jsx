@@ -88,6 +88,8 @@ function StudentPage() {
             <input
               type="number"
               name="CA1"
+              min="0"
+              max="20"
               placeholder="CA1 /20"
               onChange={handleChange}
               required
@@ -96,6 +98,8 @@ function StudentPage() {
             <input
               type="number"
               name="CA2"
+              min="0"
+              max="20"
               placeholder="CA2 /20"
               onChange={handleChange}
               required
@@ -104,6 +108,8 @@ function StudentPage() {
             <input
               type="number"
               name="Assignment"
+              min="0"
+              max="25"
               placeholder="Assignment /25"
               onChange={handleChange}
               required
@@ -112,7 +118,9 @@ function StudentPage() {
             <input
               type="number"
               name="Mid_Semester_Exam"
-              placeholder="Midterm score /35"
+              min="0"
+              max="30"
+              placeholder="Midterm score /30"
               onChange={handleChange}
               required
             />
@@ -120,6 +128,8 @@ function StudentPage() {
             <input
               type="number"
               name="Attendance_Percent"
+              min="0"
+              max="100"
               placeholder="Attendance/100%"
               onChange={handleChange}
               required
